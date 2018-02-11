@@ -14,5 +14,9 @@ rbenv install 2.3.0
 rbenv global 2.3.0
 gem update
 gem install bundler
-gem install rails --version 5.0.1 --no-ri --no-rdoc
+gem install rails --version="5.0.1" --no-ri --no-rdoc
 
+mkdir -p ~/.vim/bundle
+git clone https://github.com/Shougo/neobundle.vim  ~/.vim/bundle/neobundle.vim
+git clone https://github.com/SeijiKitamura/vimrc.git
+cp vimrc/.vimrc ./
