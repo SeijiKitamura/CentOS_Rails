@@ -12,9 +12,11 @@ echo 'eval "$(rbenv init -)"' >> .bash_profile
 source .bash_profile
 rbenv install 2.3.0
 rbenv global 2.3.0
+echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
+
 gem update
-gem install bundler
-gem install rails --version="5.0.1" --no-ri --no-rdoc
+gem install bundler 
+gem install rails --version="5.0.1" 
 
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim  ~/.vim/bundle/neobundle.vim
